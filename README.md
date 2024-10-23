@@ -9,3 +9,11 @@ Ce qu'il faut faire:
 * créer un singe précis
 * créer un singe random
 * ajouter du texte sur le singe?
+
+## Quickstart
+`python setup.py sdist bdist_wheel` \
+`pip install .` \
+et après dans un script de ton choix \
+``` python
+import monkey_gerator
+monkey_generator.m_generator("test.svg")

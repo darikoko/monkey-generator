@@ -39,6 +39,12 @@ class MonkeyAvatar():
         out_svg_s.write('</svg>')
         out_svg_s.close()
 
+def random_hat(): return random.choice([None, "CapBackwards.xml", "CapBanano.xml", "CapBebe.xml", "CapCarlos.xml", "CapHngPlus.xml", "CapHng.xml", "CapKappa.xml", "CapPepe.xml", "CapRick.xml", "CapSmugGreen.xml", "CapSmug.xml", "CapThonk.xml", "Cap.xml", "Crown.xml", "HatCowboy.xml", "HatJester.xml", "HelmetViking.xml", "BeanieBanano.xml", "BeanieHippie.xml", "BeanieLongBanano.xml", "BeanieLong.xml", "Beanie.xml"])
+def random_mouth(): return random.choice([ None, "SmileBigTeeth.xml", "SmileNormal.xml", "SmileTongue.xml", "Confused.xml", "Meh.xml" ])
+def random_glasses(): return random.choice([ None, "SunglassesAviatorCyan.xml", "SunglassesAviatorGreen.xml", "SunglassesAviatorYellow.xml", "SunglassesThug.xml", "GlassesNerdCyan.xml", "GlassesNerdGreen.xml", "GlassesNerdPink.xml" ])
+
+"""
+#OLD CODE
 def random_generator(out_svg_p):
 
     MODULE_PATH = os.path.abspath(os.path.dirname(__file__))
@@ -151,3 +157,4 @@ def random_generator(out_svg_p):
         out_svg_s.write(line)
     out_svg_s.write('</svg>')
     out_svg_s.close()
+"""

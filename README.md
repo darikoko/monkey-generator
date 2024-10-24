@@ -11,9 +11,16 @@ Ce qu'il faut faire:
 * ajouter du texte sur le singe?
 
 ## Quickstart
+### Install
 `python setup.py sdist bdist_wheel` \
-`pip install .` \
-et après dans un script de ton choix \
+`pip install .`
+
+### Usage
 ``` python
 import monkey_gerator
-monkey_generator.m_generator("test.svg")
+# créer un nouvel avatar
+monkey_generator.MonkeyGenerator()
+# créer un nouvel avatar aver des traits précis
+monkey_generator.MonkeyGenerator(hat="Crown.xml",glasses="SunglassesAviatorCyan.xml",mouth="SmileBigTeeth.xml")
+# créer un nouvel avatar avec un trait aléatoire (ici le chapeau)
+monkey_generator.MonkeyGenerator(hat=monkey_generator.random_hat(),glasses="SunglassesAviatorCyan.xml",mouth="SmileBigTeeth.xml")
